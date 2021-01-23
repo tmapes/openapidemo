@@ -1,0 +1,18 @@
+openapi: 3.0.1
+info:
+  title: openapidemo
+  version: "0.0"
+paths:
+  /testing:
+    get:
+      operationId: helloWorldMap
+      parameters: []
+      responses:
+        "200":
+          description: helloWorldMap 200 response
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties:
+                  type: string
